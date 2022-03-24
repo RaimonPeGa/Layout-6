@@ -10,12 +10,13 @@ text-align: right;
 
 #compra {
 display: inline-block;
-color: white;
+color: yellow;
 padding: 1em;
 }
 
 #compra > i {
 font-size: 30px;
+color: white;
 }
 
 
@@ -26,6 +27,7 @@ background-color: #20201f;
 color: yellow;
 padding-left: 2em;
 padding: 1em;
+z-index: 1;
 }
 
 
@@ -35,9 +37,44 @@ font-size: 60px;
 padding: 30px;
 }
 
+#barra {
+  padding: 1em;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  padding-right: 10em;
+  padding-left: 10em;
+  padding-bottom: 0;
+  margin-left: 20em;
+  top: 12.5em;
+  border: thin solid grey;
+}
+
+#barra ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+#barra li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-right: thin solid black;
+  text-align: center;
+}
+
+#barra i {
+  display: block;
+}
+
+#white-icon {
+  color: white;
+}
 
 #browser {
 position: relative;
+z-index: 1
 }
 
 #browser > img {
@@ -70,9 +107,6 @@ font-size: 30px;
   margin: 0 auto;
   margin-top: 4em;
   opacity: 1 !important;
-
-
-
 }
 
 
@@ -86,9 +120,23 @@ font-size: 30px;
   border:none;
 }
 
+#specialize {
+  padding: 1em;
+  background-image: url(pared1.jpg);
+  color: white;
+  text-align: center;
+}
+
+#specialize h3 {
+font-size: 35px;
+}
+
+#specialize p {
+font-size: 20px;
+}
+
 #summary {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   padding: 1em 8em;
 }
 
